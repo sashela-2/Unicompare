@@ -80,3 +80,17 @@ nav a {
     }
 
 }
+
+.results {
+    padding: 2rem;
+}
+
+#resultsBox {
+    min-height: 200px;
+
+    border: 2px dashed #999;
+
+    background: white;
+
+    padding: 1rem;
+}
