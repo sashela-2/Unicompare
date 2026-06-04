@@ -1,0 +1,43 @@
+:root{
+    --bg-main:#050505;
+    --bg-section:#0D0D0D;
+    --bg-card:#141414;
+
+    --border:#2E2E2E;
+
+    --primary:#F58A07;
+    --primary-hover:#FF9F1C;
+
+    --text-heading:#F2F2F2;
+    --text-body:#D4D4D4;
+    --text-muted:#8F8F8F;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ddd;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}

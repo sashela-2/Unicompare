@@ -1,5 +1,21 @@
 /* Reseting all of the default attr */
 
+
+:root{
+    --bg-main:#050505;
+    --bg-section:#0D0D0D;
+    --bg-card:#141414;
+
+    --border:#2E2E2E;
+
+    --primary:#F58A07;
+    --primary-hover:#FF9F1C;
+
+    --text-heading:#F2F2F2;
+    --text-body:#D4D4D4;
+    --text-muted:#8F8F8F;
+}
+
 * {
     margin: 0;
     padding: 0;
