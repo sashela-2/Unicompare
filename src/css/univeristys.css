@@ -22,22 +22,64 @@
 }
 
 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-main);
+    color: var(--text-body);
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #ddd;
+    background: var(--bg-section);
+    border-bottom: 1px solid var(--border);
 }
 
+nav h1 {
+    color: var(--text-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
 nav ul {
     display: flex;
     gap: 1rem;
-
     list-style: none;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--text-muted);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.75rem;
+    background: var(--bg-card);
+    transition: 0.3s;
 }
+
+nav a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
