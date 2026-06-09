@@ -144,7 +144,7 @@ select {
 .results {
     padding: 2rem;
     background-color: var(--bg-main);
-    text-align: center;
+
    
 }
 #resultsBox {
@@ -180,4 +180,7 @@ button:hover{
     color: white;
     border-radius: 10px;
 
+
 }
+
+/* en */
