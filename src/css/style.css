@@ -153,3 +153,19 @@ select {
 
     padding: 1rem;
 }
+
+button {
+    background: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#resultsBox {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background: white;
+    color: black;
+}
