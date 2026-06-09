@@ -126,6 +126,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--primary);
 }
 
 
@@ -142,30 +143,41 @@ select {
 
 .results {
     padding: 2rem;
+    background-color: var(--bg-main);
+    text-align: center;
+   
 }
-
 #resultsBox {
     min-height: 200px;
 
     border: 2px dashed #999;
 
-    background: white;
+    background: var(--bg-main);
 
     padding: 1rem;
 }
 
 button {
-    background: orange;
+    background: var(--bg-card);
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    
+}
+button:hover{
+    background-color: orange;
+    transition: 0.5s;
 }
 
 #resultsBox {
     margin-top: 20px;
     border: 1px solid black;
     padding: 10px;
-    background: white;
-    color: black;
+    background: var(--bg-card);
+    border: var(--border);
+    color: white;
+    border-radius: 10px;
+
 }
