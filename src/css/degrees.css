@@ -1,3 +1,6 @@
+/* Reseting all of the default attr */
+
+
 :root{
     --bg-main:#050505;
     --bg-section:#0D0D0D;
@@ -13,13 +16,12 @@
     --text-muted:#8F8F8F;
 }
 
-
-*{
-    padding: 0;
+* {
     margin: 0;
-
-    
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 
 
@@ -63,6 +65,7 @@ nav a:hover {
     background: var(--primary);
     color: white;
 }
+
 
 .hero {
     text-align: center;

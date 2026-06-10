@@ -122,7 +122,7 @@ select {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #ccc;
+    background: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +152,7 @@ select {
 
     border: 2px dashed #999;
 
-    background: var(--bg-main);
+    background: var(--bg-card);
 
     padding: 1rem;
 }
