@@ -152,7 +152,7 @@ select {
 
     border: 2px dashed #999;
 
-    background: var(--bg-card);
+    background: var(--bg-card); 
 
     padding: 1rem;
 }
