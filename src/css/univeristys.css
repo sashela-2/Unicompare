@@ -83,3 +83,21 @@ nav a:hover {
     margin: 0 auto;
 }
 
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  font-size: 24px;
+  cursor: pointer;
+}
