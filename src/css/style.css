@@ -126,7 +126,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary);
+    color: var(--text-heading);
 }
 
 
