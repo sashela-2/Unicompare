@@ -101,3 +101,38 @@ button {
   font-size: 24px;
   cursor: pointer;
 }
+
+.universities {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.university-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.university-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.university-card p {
+    line-height: 1.7;
+    color: var(--text-body);
+}
+
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
