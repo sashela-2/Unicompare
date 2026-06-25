@@ -86,3 +86,41 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.degrees{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem;
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.degree-card{
+    flex:1;
+    min-width:300px;
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:1.5rem;
+}
+
+.degree-card h3{
+    color:var(--primary);
+    margin-bottom:.5rem;
+}
+
+.degree-card h4{
+    color:var(--text-heading);
+    margin-bottom:1rem;
+}
+
+.degree-card p{
+    color:var(--text-muted);
+    line-height:1.6;
+    margin-bottom:1rem;
+}
+
+.degree-card span{
+    color:var(--primary-hover);
+    font-weight:600;
+}

@@ -86,3 +86,37 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.requirements{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:1.5rem;
+}
+
+.requirement-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:1.5rem;
+}
+
+.requirement-card h3{
+    color:var(--text-heading);
+    margin-bottom:1rem;
+}
+
+.requirement-card p{
+    color:var(--text-muted);
+    line-height:1.6;
+    margin-bottom:1rem;
+}
+
+.requirement-card ul{
+    margin-left:1rem;
+}
+
+.requirement-card li{
+    margin-bottom:.5rem;
+}
