@@ -1,0 +1,88 @@
+/* Reseting all of the default attr */
+
+
+:root{
+    --bg-main:#050505;
+    --bg-section:#0D0D0D;
+    --bg-card:#141414;
+
+    --border:#2E2E2E;
+
+    --primary:#F58A07;
+    --primary-hover:#FF9F1C;
+
+    --text-heading:#F2F2F2;
+    --text-body:#D4D4D4;
+    --text-muted:#8F8F8F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-main);
+    color: var(--text-body);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg-section);
+    border-bottom: 1px solid var(--border);
+}
+
+nav h1 {
+    color: var(--text-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.75rem;
+    background: var(--bg-card);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
