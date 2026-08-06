@@ -1,8 +1,8 @@
 /* Reseting all of the default attr */
 
-
+ 
 :root{
-    --bg-main:#050505;
+    /* --bg-main:#050505;
     --bg-section:#0D0D0D;
     --bg-card:#141414;
 
@@ -13,8 +13,65 @@
 
     --text-heading:#F2F2F2;
     --text-body:#D4D4D4;
-    --text-muted:#8F8F8F;
+    --text-muted:#8F8F8F; */
+
+    --bg-main:#0F3040;
+    --bg-section:#163C4F;
+    --bg-card:#464858;
+    --border:#A56F63;
+    --primary:#D99B7F;
+    --primary-hover:#A56F63;
+    --text-heading:#F5EDE8;
+    --text-body:#D6C7BE;
+    --text-muted:#A79890;
 }
+ /* Going to be commenting out the root colour scheme and replacing them with the pallets i choose  */
+
+/* body.theme-dark {
+    --bg-main:#0F3040;
+    --bg-section:#163C4F;
+    --bg-card:#464858;
+    --border:#A56F63;
+    --primary:#D99B7F;
+    --primary-hover:#A56F63;
+    --text-heading:#F5EDE8;
+    --text-body:#D6C7BE;
+    --text-muted:#A79890; */
+
+/* body.theme-light {
+    --bg-main:#FBEFEF;
+    --bg-section:#FFE2E2;
+    --bg-card:#FFFFFF;
+    --border:#F5CBCB;
+    --primary:#C5B3D3;
+    --primary-hover:#A98FC1;
+    --text-heading:#3A2E2E;
+    --text-body:#5A4A4A;
+    --text-muted:#8F7A7A;
+}
+body.theme-colourful-a {
+    --bg-main:#D9F9DF;
+    --bg-section:#AEE2FF;
+    --bg-card:#FFFFFF;
+    --border:#B5BAFF;
+    --primary:#9FA1FF;
+    --primary-hover:#7B7EFF;
+    --text-heading:#2E2E45;
+    --text-body:#4A4A5E;
+    --text-muted:#767690;
+}
+body.theme-colourful-b {
+    --bg-main:#FFDBFD;
+    --bg-section:#C9BEFF;
+    --bg-card:#FFFFFF;
+    --border:#8494FF;
+    --primary:#6367FF;
+    --primary-hover:#4347E0;
+    --text-heading:#2E2A45;
+    --text-body:#4A4360;
+    --text-muted:#7A7090;
+} */
+
 
 * {
     margin: 0;
@@ -29,6 +86,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--bg-main);
     color: var(--text-body);
+
 }
 
 
@@ -184,3 +242,16 @@ button:hover{
 }
 
 /* en */
+
+
+.vs-box {
+    width: 80px;      /* Going to trial this without responsive percenttages just to gauge  */
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-heading);
+    font-weight: 700;
+}
