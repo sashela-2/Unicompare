@@ -86,6 +86,7 @@ function compareUnis() {
         results += "Graduate Employment Rate: 85% <br>";
         results += "Average Graduate Salary: $54,000 <br>";
         results += "Entry Requirement: NCEA Level 3, UE <br>";
+        results += "Bede score 1 MILLION (ALEX LAM ATTENDS) (ULTRA GAY) ";
         results += "International Students: Yes <br>";
     }
 
@@ -93,7 +94,9 @@ function compareUnis() {
 }
 
 
-const sliderImgs = document.querySelectorAll(src/Images/Waikato-Photos/University_of_Waikato_village_green.jpg);
+
+ const sliderImgs = document.querySelectorAll('.hero img');  //MUST BE HERO IMAGE DO NOT JUST PUT IMAGE HERE 
+
 const sliderDots = document.querySelectorAll('.dot');
 let currentSlide = 0;
 
