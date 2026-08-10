@@ -2,18 +2,23 @@
 
 
 :root{
-    --bg-main:#050505;
+    /* --bg-main:#050505;
     --bg-section:#0D0D0D;
     --bg-card:#141414;
 
     --border:#2E2E2E;
 
     --primary:#F58A07;
-    --primary-hover:#FF9F1C;
-
-    --text-heading:#F2F2F2;
-    --text-body:#D4D4D4;
-    --text-muted:#8F8F8F;
+    --primary-hover:#FF9F1C; */
+    --bg-main:#0F3040;
+    --bg-section:#163C4F;
+    --bg-card:#464858;
+    --border:#A56F63;
+    --primary:#D99B7F;
+    --primary-hover:#A56F63;
+    --text-heading:#F5EDE8;
+    --text-body:#D6C7BE;
+    --text-muted:#A79890;
 }
 
 * {
@@ -36,7 +41,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 2rsem;
     background: var(--bg-section);
     border-bottom: 1px solid var(--border);
 }
