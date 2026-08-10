@@ -2,19 +2,7 @@
 
  
 :root{
-    /* --bg-main:#050505;
-    --bg-section:#0D0D0D;
-    --bg-card:#141414;
-
-    --border:#2E2E2E;
-
-    --primary:#F58A07;
-    --primary-hover:#FF9F1C;
-
-    --text-heading:#F2F2F2;
-    --text-body:#D4D4D4;
-    --text-muted:#8F8F8F; */
-
+   
     --bg-main:#0F3040;
     --bg-section:#163C4F;
     --bg-card:#464858;
@@ -27,59 +15,15 @@
 }
  /* Going to be commenting out the root colour scheme and replacing them with the pallets i choose  */
 
-/* body.theme-dark {
-    --bg-main:#0F3040;
-    --bg-section:#163C4F;
-    --bg-card:#464858;
-    --border:#A56F63;
-    --primary:#D99B7F;
-    --primary-hover:#A56F63;
-    --text-heading:#F5EDE8;
-    --text-body:#D6C7BE;
-    --text-muted:#A79890; */
-
-/* body.theme-light {
-    --bg-main:#FBEFEF;
-    --bg-section:#FFE2E2;
-    --bg-card:#FFFFFF;
-    --border:#F5CBCB;
-    --primary:#C5B3D3;
-    --primary-hover:#A98FC1;
-    --text-heading:#3A2E2E;
-    --text-body:#5A4A4A;
-    --text-muted:#8F7A7A;
-}
-body.theme-colourful-a {
-    --bg-main:#D9F9DF;
-    --bg-section:#AEE2FF;
-    --bg-card:#FFFFFF;
-    --border:#B5BAFF;
-    --primary:#9FA1FF;
-    --primary-hover:#7B7EFF;
-    --text-heading:#2E2E45;
-    --text-body:#4A4A5E;
-    --text-muted:#767690;
-}
-body.theme-colourful-b {
-    --bg-main:#FFDBFD;
-    --bg-section:#C9BEFF;
-    --bg-card:#FFFFFF;
-    --border:#8494FF;
-    --primary:#6367FF;
-    --primary-hover:#4347E0;
-    --text-heading:#2E2A45;
-    --text-body:#4A4360;
-    --text-muted:#7A7090;
-} */
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
-
-
 
 
 body {
@@ -124,7 +68,7 @@ nav a:hover {
     color: white;
 }
 
-
+/* 
 .hero {
     text-align: center;
     padding: 6rem 1rem;
@@ -142,8 +86,85 @@ nav a:hover {
     color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto;
+} */
+
+.hero {
+    position: relative;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
 }
 
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.hero img.active {
+    opacity: 0.45;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,48,64,0.75) 0%, rgba(15,48,64,0.55) 45%, var(--bg-main) 100%); /* Lin grad will enable the blackout effect on the webstie */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+    padding: 0 1.5rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-body);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* NOTE TRIAL IS PART IS STILL BUGGY TRIAL SEP */
+.slider-dots {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: var(--primary);
+    width: 20px;
+    border-radius: 4px;
+}
 
 .comparison {
     display: flex;

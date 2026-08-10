@@ -91,3 +91,18 @@ function compareUnis() {
 
     document.getElementById("resultsBox").innerHTML = results;
 }
+
+
+const sliderImgs = document.querySelectorAll(src/Images/Waikato-Photos/University_of_Waikato_village_green.jpg);
+const sliderDots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+
+setInterval(() => {
+    sliderImgs[currentSlide].classList.remove('active');
+    sliderDots[currentSlide].classList.remove('active');
+
+    currentSlide = (currentSlide + 1) % sliderImgs.length;
+
+    sliderImgs[currentSlide].classList.add('active');
+    sliderDots[currentSlide].classList.add('active');
+}, 3000);
