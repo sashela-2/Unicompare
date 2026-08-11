@@ -142,6 +142,8 @@ nav a:hover {
 }
 
 /* NOTE TRIAL IS PART IS STILL BUGGY TRIAL SEP */
+
+/* SLIDER DOT STYLES */
 .slider-dots {
     position: absolute;
     bottom: 22px;
@@ -165,7 +167,7 @@ nav a:hover {
     width: 20px;
     border-radius: 4px;
 }
-
+/* Slider dot styles  */t 
 .comparison {
     display: flex;
     justify-content: center;
@@ -275,4 +277,55 @@ button:hover{
     align-items: center;
     color: var(--text-heading);
     font-weight: 700;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.university-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 320px;
+}
+
+.university-box h3 {
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+/* These aree for the "win condidtion of each degree" its just harded coded colour for the better unit */
+.spec-label {
+    color: var(--text-muted);
+}
+
+.spec-value {
+    color: var(--text-body);
+    font-weight: 600;
+}
+
+.spec-value.win {
+    color: var(--win);
+}
+
+.spec-value.win::after {
+    content: " ✓";
 }

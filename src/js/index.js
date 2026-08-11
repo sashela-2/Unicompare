@@ -24,15 +24,18 @@
 //     document.getElementById("resultsBox").innerHTML = results;
 // }
 
+
+// Block of code is commented out to the test the new version of the code 
+
 function compareUnis() {
     var uni1 = document.getElementById("uni1").value;
     var uni2 = document.getElementById("uni2").value;
 
-    if (uni1 == "Select University" || uni2 == "Select University") {
+    if (uni1 == "Select University" || uni2 == "Select University") {      // (A clause for when the User does a invalid input the Alert is baked intro vanilla js)
         alert("please select a university");
         return;
     }
-
+                                                               // This block of code is just pretty much hard coded data 
     var results = "";
 
     if (uni1 == "auckland") {
@@ -95,12 +98,16 @@ function compareUnis() {
 
 
 
- const sliderImgs = document.querySelectorAll('.hero img');  //MUST BE HERO IMAGE DO NOT JUST PUT IMAGE HERE 
+ const sliderImgs = document.querySelectorAll('.hero img'); // Takes all of the IMG elements from the html in side of the hero 
+ 
+ 
+ //MUST BE HERO IMAGE DO NOT JUST PUT IMAGE HERE 
 
-const sliderDots = document.querySelectorAll('.dot');
+const sliderDots = document.querySelectorAll('.dot');    // This block sends a timer and counts eaach image inside of the carosell 
 let currentSlide = 0;
 
-setInterval(() => {
+setInterval(() => {                                   // this block adds and removes the active class which changes the opascity of the images, adding plus one to the conter 
+                                                        // in realtion to the timer as well
     sliderImgs[currentSlide].classList.remove('active');
     sliderDots[currentSlide].classList.remove('active');
 
