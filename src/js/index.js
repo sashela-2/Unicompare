@@ -116,3 +116,55 @@ setInterval(() => {                                   // this block adds and rem
     sliderImgs[currentSlide].classList.add('active');
     sliderDots[currentSlide].classList.add('active');
 }, 3000);
+
+
+// Followed js turoial cCo
+// const universities = {
+//     auckland: {
+//         name: "University of Auckland",
+//         degree: "Bachelor of Commerce (BCom)",
+//         fees: 8200,
+//         feesWin: false,
+//         employmentRate: 89,
+//         employmentRateWin: true,
+//         avgSalary: 58000,
+//         avgSalaryWin: true
+//     },
+//     waikato: {
+//         name: "University of Waikato",
+//         degree: "Bachelor of Management Studies (BMS)",
+//         fees: 7100,
+//         feesWin: true,
+//         employmentRate: 85,
+//         employmentRateWin: false,
+//         avgSalary: 54000,
+//         avgSalaryWin: false
+//     }
+// };
+
+
+// const fields = [
+//     { key: "degree", label: "Degree" },
+//     { key: "fees", label: "Annual Fees", format: v => "$" + v.toLocaleString() },
+//     { key: "employmentRate", label: "Employment Rate", format: v => v + "%" },
+//     { key: "avgSalary", label: "Avg. Graduate Salary", format: v => "$" + v.toLocaleString() }
+// ];
+
+// function buildCard(self) {
+//     let rows = "";
+
+//     fields.forEach(field => {
+//         const displayVal = field.format ? field.format(self[field.key]) : self[field.key];
+//         const isWinner = self[field.key + "Win"] === true;
+
+//         rows += `<div class="spec-row">
+//             <span class="spec-label">${field.label}</span>
+//             <span class="spec-value ${isWinner ? 'win' : ''}">${displayVal}</span>
+//         </div>`;
+//     });
+
+//     return `<article class="university-box">
+//         <h3>${self.name}</h3>
+//         ${rows}
+//     </article>`;
+// }

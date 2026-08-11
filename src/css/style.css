@@ -12,6 +12,7 @@
     --text-heading:#F5EDE8;
     --text-body:#D6C7BE;
     --text-muted:#A79890;
+    --win:#8FD9A8;
 }
  /* Going to be commenting out the root colour scheme and replacing them with the pallets i choose  */
 
@@ -167,7 +168,7 @@ nav a:hover {
     width: 20px;
     border-radius: 4px;
 }
-/* Slider dot styles  */t 
+/* Slider dot styles  */
 .comparison {
     display: flex;
     justify-content: center;
