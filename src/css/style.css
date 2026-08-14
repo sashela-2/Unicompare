@@ -313,7 +313,7 @@ button:hover{
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--primary);
+    /* background: red ;  var(--primary) */
 }
 
 .result-card h3 {
@@ -357,9 +357,6 @@ button:hover{
     font-weight: 700;
 }
 
-.spec-value.win::after {
-    content: " ✓";
-}
 
 /* Increasing the size of all of the Comparison elements */
 
