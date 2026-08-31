@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
    
 <head>
@@ -74,6 +74,102 @@
 <section class="results">
   <h2>Comparison Results</h2>
   <button onclick="compareUnis()">Compare Now</button>
+  <div id="resultsBox" class="cards">Select two universities to compare.</div>
+</section>
+
+    </main>
+
+
+    
+    
+   
+
+    <script src="src/js/index.js"></script>
+     
+  
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicompare</title>
+     <link rel="stylesheet" href="src/css/style.css" >
+</head>
+
+
+    
+<body class="theme-dark">
+   <header>
+
+        <nav>
+            <h1>Uni Compare</h1>
+
+            <ul>
+                <li><a href="index.html">Compare</a></li>
+                <li><a href="universities.html">Universities
+                <li><a href="degrees.html">Degrees</a></li>
+                <li><a href="entry.html">Entry Requirements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+  <main>
+    
+       
+
+        <section class="hero" id="hero">
+    <img src="src/Images/Waikato-Photos/University_of_Waikato_village_green.jpg"   class="active" alt="University campus photo 1">
+    <img src="src/Images/Auckland-Photos/University_of_Auckland_tower.jpg" alt="University campus photo 2">
+    <img src="src/Images/Auckland-Photos/Auckland-Science-Centre copy.jpg">
+
+    <div class="hero-content">
+        <h2>Compare New Zealand Universities</h2>
+        <p>Compare fees, rankings and entry requirements all in one place.</p>
+    </div>
+
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+ 
+<section class="comparison">
+    <h2> </h2>
+  <article class="university-box">
+    <h3>University One</h3>
+    <select id="uni1">
+      <option>Select University</option>
+      <option value="auckland">University of Auckland</option>
+      <option value="waikato">University of Waikato</option>
+      <option value="otago">University of Otago</option>
+    </select>
+  </article>
+
+  <div class="vs-box">VS</div>
+
+  <article class="university-box">
+    <h3>University Two</h3>
+    <select id="uni2">
+      <option>Select University</option>
+      <option value="auckland">University of Auckland</option>
+      <option value="waikato">University of Waikato</option>
+      <option value="otago">University of Otago</option>
+    </select>
+  </article>
+</section>
+
+<section class="results">
+  <h2>Comparison Results</h2>
+  <button onclick="compareUnis()" id="uni1">Compare Now</button>
   <div id="resultsBox" class="cards">Select two universities to compare.</div>
 </section>
 
