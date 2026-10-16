@@ -134,3 +134,67 @@ button {
     gap: 1rem;
     margin-bottom: 3rem;
 }
+
+
+*/
+.menu-toggle {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.45rem;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        margin-left: auto;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+  
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 1rem;
+    }
+
+  
+    nav ul.menu-open {
+        display: flex;
+    }
+
+    nav li, nav a {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+}

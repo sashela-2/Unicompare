@@ -135,14 +135,13 @@ nav a:hover {
 }
 
 
-/* Sprint 3 - Hamburger menu for degrees page */
 
-/* Hiding hamburger on computer screens */
+
 .menu-toggle {
     display: none;
 }
 
-/* When screen is 700px or smaller */
+
 @media (max-width: 700px) {
 
     nav {
@@ -154,7 +153,7 @@ nav a:hover {
         font-size: 1.45rem;
     }
 
-    /* Showing hamburger button on phones */
+
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -169,7 +168,7 @@ nav a:hover {
         cursor: pointer;
     }
 
-    /* Making the three lines */
+
     .menu-toggle span {
         display: block;
         width: 100%;
@@ -177,7 +176,7 @@ nav a:hover {
         background: white;
     }
 
-    /* Hiding the links on mobile */
+  
     nav ul {
         display: none;
         width: 100%;
@@ -186,7 +185,6 @@ nav a:hover {
         padding-top: 1rem;
     }
 
-    /* Showing links when hamburger is clicked */
     nav ul.menu-open {
         display: flex;
     }

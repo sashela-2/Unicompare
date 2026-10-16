@@ -12,7 +12,18 @@
 
     <nav>
         <h1>Uni Compare</h1>
-        <ul>
+        
+        <!-- Sprint 3 - Hamburger menu for phones -->
+        <button class="menu-toggle" type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="main-nav">
             <li><a href="index.html">Compare</a></li>
             <li><a href="universities.html">Universities</a></li>
             <li><a href="degrees.html">Degrees</a></li>
@@ -79,6 +90,22 @@
     </div>
 
 </section>
+
+<script>
+    // Sprint 3 - opening and closing the hamburger menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    // When the button is clicked, show or hide the links
+    menuToggle.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('menu-open');
+
+        // Updating the button for accessibility
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.setAttribute('aria-label',
+            isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+</script>
 
 </body>
 </html>
