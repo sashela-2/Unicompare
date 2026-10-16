@@ -41,7 +41,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rsem;
+    
+    padding: 1rem 2rem;
     background: var(--bg-section);
     border-bottom: 1px solid var(--border);
 }
@@ -128,4 +129,17 @@ nav a:hover {
 .degree-card span{
     color:var(--primary-hover);
     font-weight:600;
+}
+
+
+/* Testing if the mobile CSS is working */
+@media (max-width: 700px) {
+    nav ul {
+        display: none !important;
+    }
+
+    nav .menu-toggle {
+        display: flex !important;
+        background: red;
+    }
 }

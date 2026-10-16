@@ -37,13 +37,17 @@ body {
 }
 
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rsem;
+    padding: 1rem 2rem;
+    gap: 1rem;
     background: var(--bg-section);
     border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
 }
 
 nav h1 {
@@ -128,4 +132,70 @@ nav a:hover {
 .degree-card span{
     color:var(--primary-hover);
     font-weight:600;
+}
+
+
+/* Sprint 3 - Hamburger menu for degrees page */
+
+/* Hiding hamburger on computer screens */
+.menu-toggle {
+    display: none;
+}
+
+/* When screen is 700px or smaller */
+@media (max-width: 700px) {
+
+    nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.45rem;
+    }
+
+    /* Showing hamburger button on phones */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* Making the three lines */
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+
+    /* Hiding the links on mobile */
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 1rem;
+    }
+
+    /* Showing links when hamburger is clicked */
+    nav ul.menu-open {
+        display: flex;
+    }
+
+    nav li, nav a {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
 }
