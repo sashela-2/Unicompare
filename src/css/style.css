@@ -173,6 +173,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
 }
@@ -533,4 +534,19 @@ button:hover {
     nav a {
         display: block;
     }
+}
+
+
+
+/* for some reason this text was pushing  */
+
+
+.comparison h2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.comparison {
+    justify-content: center;
 }
