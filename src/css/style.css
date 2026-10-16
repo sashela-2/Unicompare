@@ -467,3 +467,70 @@ button:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
 }
+
+
+
+
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        position: relative;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    nav h1 {
+        font-size: 1.45rem;
+    }
+
+   
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        margin: 0;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 0.6rem;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    .menu-toggle span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: var(--text-heading);
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        padding-top: 1rem;
+    }
+
+
+    nav ul.menu-open {
+        display: flex;
+    }
+
+    nav li, nav a {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+}

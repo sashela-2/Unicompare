@@ -204,3 +204,22 @@ function compareUnis() {
 
     document.getElementById("resultsBox").innerHTML = card1 + card2;
 }
+
+
+ // Sprint 3 - hamburger menu for phones
+ // Find the hamburger button and the list of navigation links
+ const menuToggle = document.querySelector('.menu-toggle');
+ const mainNav = document.getElementById('main-nav');
+
+ // Only run this if both parts are on the page
+ if (menuToggle && mainNav) {
+    
+     menuToggle.addEventListener('click', () => {
+       
+         const isOpen = mainNav.classList.toggle('menu-open');
+
+    // this solely for the disabled 
+         menuToggle.setAttribute('aria-expanded', String(isOpen));
+         menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+     });
+ }
